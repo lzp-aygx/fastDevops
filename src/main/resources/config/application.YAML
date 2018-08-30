@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: fastDevops
+server:
+  servlet:
+    context-path: /${spring.application.name}
+logging:
+  path: ./logs/${spring.application.name}
