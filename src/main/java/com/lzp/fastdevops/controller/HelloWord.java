@@ -12,6 +12,11 @@ public class HelloWord {
 
     private  final Logger log = LoggerFactory.getLogger(HelloWord.class);
 
+    @GetMapping(value = "/")
+    public String hello(){
+        return "hi";
+    }
+    
     @GetMapping(value = "/helloWord")
     public String sayHellow(){
         log.info("helloWord");
