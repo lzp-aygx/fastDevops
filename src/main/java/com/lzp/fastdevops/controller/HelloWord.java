@@ -16,7 +16,7 @@ public class HelloWord {
     public String hello(){
         return "hi";
     }
-    
+
     @GetMapping(value = "/helloWord")
     public String sayHellow(){
         log.info("helloWord");
